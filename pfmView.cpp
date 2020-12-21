@@ -7544,7 +7544,6 @@ pfmView::redrawMap (uint8_t clear, uint8_t pfm3D)
 
   for (int32_t i = 0 ; i < misc.poly_filter_mask_count ; i++) misc.poly_filter_mask[i].displayed = NVFalse;
 
-
   map->redrawMap (clear);
 
 
@@ -13038,8 +13037,8 @@ pfmView::slotExportImage ()
   int32_t w = misc.displayed_area_width[0];
   int32_t h = misc.displayed_area_height[0];
 
-  QString pfm_str = tr ("%1x%2 PFM resolution").arg (w).arg (h);
-  QString screen_str = tr ("%1x%2 Screen resolution").arg (mapdef.draw_width).arg (mapdef.draw_height);
+  QString pfm_str = tr ("%1x%2 (PFM resolution)").arg (w).arg (h);
+  QString screen_str = tr ("%1x%2 (Screen resolution)").arg (mapdef.draw_width).arg (mapdef.draw_height);
 
   lst << pfm_str << screen_str << tr ("1280x1024") << tr ("2560x2048") << tr ("5120x4096") << tr ("10240x8192");
 
@@ -13069,15 +13068,16 @@ pfmView::slotExportImage ()
 
       redrawMap (NVTrue, NVTrue);
 
-      export_image (this, &misc, &options, map);
-
+     export_image (this, &misc, &options, map);
 
       qApp->restoreOverrideCursor ();
 
 
       map->dummyBuffer (0, 0, NVFalse);
     }
-}
+
+  redrawMap (NVTrue, NVTrue);
+ }
 
 
 

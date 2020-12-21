@@ -42,7 +42,7 @@
 
 #ifndef VERSION
 
-#define     VERSION     "PFM Software - pfmView V10.03 - 08/07/19"
+#define     VERSION     "PFM Software - pfmView V10.04 - 11/27/19"
 
 #endif
 
@@ -2498,5 +2498,12 @@
     08/07/19
 
     - Added support for SHAPE files (via the utility library) for "Zoom To Area File".
+
+
+    Version 10.04
+    Russ Johnson (Optimal Geo)
+    11/27/19
+
+    - Fixed bug in image export.
 
 </pre>*/

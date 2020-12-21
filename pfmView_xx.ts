@@ -2193,10 +2193,10 @@ Please un-group the features first.</source>
     <message>
         <location filename="check_recent.cpp" line="76"/>
         <location filename="check_recent.cpp" line="113"/>
-        <location filename="pfmView.cpp" line="7953"/>
-        <location filename="pfmView.cpp" line="7982"/>
-        <location filename="pfmView.cpp" line="8003"/>
-        <location filename="pfmView.cpp" line="8074"/>
+        <location filename="pfmView.cpp" line="7952"/>
+        <location filename="pfmView.cpp" line="7981"/>
+        <location filename="pfmView.cpp" line="8002"/>
+        <location filename="pfmView.cpp" line="8073"/>
         <source>pfmView Open PFM Structure</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2306,7 +2306,7 @@ If you wish to open this file you must close the currently opened PFM(s).</sourc
         <location filename="outputFeaturePolygons.cpp" line="161"/>
         <location filename="outputFeaturePolygons.cpp" line="175"/>
         <location filename="outputFeaturePolygons.cpp" line="226"/>
-        <location filename="pfmView.cpp" line="12061"/>
+        <location filename="pfmView.cpp" line="12060"/>
         <source>pfmView Output Feature</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2893,8 +2893,8 @@ If you wish to open this file you must close the currently opened PFM(s).</sourc
         <location filename="pfmView.cpp" line="1154"/>
         <location filename="pfmView.cpp" line="1155"/>
         <location filename="pfmView.cpp" line="1158"/>
-        <location filename="pfmView.cpp" line="10312"/>
-        <location filename="pfmView.cpp" line="10440"/>
+        <location filename="pfmView.cpp" line="10311"/>
+        <location filename="pfmView.cpp" line="10439"/>
         <source>Chart tool bar</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3064,13 +3064,13 @@ If you wish to open this file you must close the currently opened PFM(s).</sourc
     </message>
     <message>
         <location filename="pfmView.cpp" line="1905"/>
-        <location filename="pfmView.cpp" line="8818"/>
+        <location filename="pfmView.cpp" line="8817"/>
         <source>Highlight %L1 percent of depth</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="pfmView.cpp" line="1907"/>
-        <location filename="pfmView.cpp" line="8820"/>
+        <location filename="pfmView.cpp" line="8819"/>
         <source>Highlight valid bin count exceeding %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3082,7 +3082,7 @@ If you wish to open this file you must close the currently opened PFM(s).</sourc
     </message>
     <message>
         <location filename="pfmView.cpp" line="1944"/>
-        <location filename="pfmView.cpp" line="8813"/>
+        <location filename="pfmView.cpp" line="8812"/>
         <source>Set the on-the-fly gridding parameters including attribute (%1) and bin size (%L2)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3624,15 +3624,15 @@ If you wish to open this file you must close the currently opened PFM(s).</sourc
     <message>
         <location filename="pfmView.cpp" line="3668"/>
         <location filename="pfmView.cpp" line="5652"/>
-        <location filename="pfmView.cpp" line="10502"/>
-        <location filename="pfmView.cpp" line="10529"/>
+        <location filename="pfmView.cpp" line="10501"/>
+        <location filename="pfmView.cpp" line="10528"/>
         <source>pfmView Filter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="pfmView.cpp" line="3669"/>
         <location filename="pfmView.cpp" line="5653"/>
-        <location filename="pfmView.cpp" line="10530"/>
+        <location filename="pfmView.cpp" line="10529"/>
         <source>%1 points marked invalid</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3656,7 +3656,7 @@ If you wish to open this file you must close the currently opened PFM(s).</sourc
         <location filename="pfmView.cpp" line="3984"/>
         <location filename="pfmView.cpp" line="4548"/>
         <location filename="pfmView.cpp" line="7349"/>
-        <location filename="pfmView.cpp" line="12390"/>
+        <location filename="pfmView.cpp" line="12389"/>
         <source> Draw contour - %L1 </source>
         <translation type="unfinished"></translation>
     </message>
@@ -3723,7 +3723,7 @@ If you wish to open this file you must close the currently opened PFM(s).</sourc
     </message>
     <message>
         <location filename="pfmView.cpp" line="4429"/>
-        <location filename="pfmView.cpp" line="12544"/>
+        <location filename="pfmView.cpp" line="12543"/>
         <source>Unable to read feature record
 Reason: %1</source>
         <translation type="unfinished"></translation>
@@ -3776,7 +3776,7 @@ Reason: %1</source>
     </message>
     <message>
         <location filename="pfmView.cpp" line="4696"/>
-        <location filename="pfmView.cpp" line="10037"/>
+        <location filename="pfmView.cpp" line="10036"/>
         <location filename="readFeature.cpp" line="58"/>
         <source>Unable to read feature records
 Reason: %1</source>
@@ -4164,42 +4164,42 @@ Reason: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="7749"/>
+        <location filename="pfmView.cpp" line="7748"/>
         <source>There are active unloads in progress.  Do you really want to exit?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="7766"/>
+        <location filename="pfmView.cpp" line="7765"/>
         <source>There are files in the delete file queue.  Do you really want to exit?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="7964"/>
-        <location filename="pfmView.cpp" line="7968"/>
+        <location filename="pfmView.cpp" line="7963"/>
+        <location filename="pfmView.cpp" line="7967"/>
         <source>PFM (*.pfm)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="7982"/>
+        <location filename="pfmView.cpp" line="7981"/>
         <source>Too many open PFM structures.
 Please close some before trying to open new ones.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="8004"/>
+        <location filename="pfmView.cpp" line="8003"/>
         <source>The file 
 %1
  is not a PFM structure or there was an error reading the file.  The error message returned was: %2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="8043"/>
+        <location filename="pfmView.cpp" line="8042"/>
         <source>Error initializing UTM projection
 </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="8048"/>
+        <location filename="pfmView.cpp" line="8047"/>
         <source>Error initializing latlon projection
 </source>
         <translation type="unfinished"></translation>
@@ -4253,7 +4253,7 @@ Please close some before trying to open new ones.</source>
         <location filename="pfmView.cpp" line="1736"/>
         <location filename="pfmView.cpp" line="1737"/>
         <location filename="pfmView.cpp" line="1740"/>
-        <location filename="pfmView.cpp" line="10121"/>
+        <location filename="pfmView.cpp" line="10120"/>
         <source>No attribute selected</source>
         <translation type="unfinished"></translation>
     </message>
@@ -4339,605 +4339,605 @@ Please close some before trying to open new ones.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="8074"/>
+        <location filename="pfmView.cpp" line="8073"/>
         <source>Sorry, pfmView only handles geographic PFM structures.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="8116"/>
-        <location filename="pfmView.cpp" line="8119"/>
-        <location filename="pfmView.cpp" line="8122"/>
-        <location filename="pfmView.cpp" line="8125"/>
-        <location filename="pfmView.cpp" line="8128"/>
-        <location filename="pfmView.cpp" line="8131"/>
-        <location filename="pfmView.cpp" line="8134"/>
-        <location filename="pfmView.cpp" line="8137"/>
-        <location filename="pfmView.cpp" line="8140"/>
-        <location filename="pfmView.cpp" line="8143"/>
+        <location filename="pfmView.cpp" line="8115"/>
+        <location filename="pfmView.cpp" line="8118"/>
+        <location filename="pfmView.cpp" line="8121"/>
+        <location filename="pfmView.cpp" line="8124"/>
+        <location filename="pfmView.cpp" line="8127"/>
+        <location filename="pfmView.cpp" line="8130"/>
+        <location filename="pfmView.cpp" line="8133"/>
+        <location filename="pfmView.cpp" line="8136"/>
+        <location filename="pfmView.cpp" line="8139"/>
+        <location filename="pfmView.cpp" line="8142"/>
         <source>Highlight %1 data</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="8155"/>
+        <location filename="pfmView.cpp" line="8154"/>
         <source>Display MISP surface  [%1]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="8454"/>
+        <location filename="pfmView.cpp" line="8453"/>
         <source>pfmView Close PFM confirmation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="8455"/>
+        <location filename="pfmView.cpp" line="8454"/>
         <source>Do you really want to close
 %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="8637"/>
-        <location filename="pfmView.cpp" line="8711"/>
-        <location filename="pfmView.cpp" line="8718"/>
-        <location filename="pfmView.cpp" line="8725"/>
-        <location filename="pfmView.cpp" line="8732"/>
-        <location filename="pfmView.cpp" line="8739"/>
+        <location filename="pfmView.cpp" line="8636"/>
+        <location filename="pfmView.cpp" line="8710"/>
+        <location filename="pfmView.cpp" line="8717"/>
+        <location filename="pfmView.cpp" line="8724"/>
+        <location filename="pfmView.cpp" line="8731"/>
+        <location filename="pfmView.cpp" line="8738"/>
         <source>pfmView Open GeoTIFF</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="8649"/>
-        <location filename="pfmView.cpp" line="8653"/>
+        <location filename="pfmView.cpp" line="8648"/>
+        <location filename="pfmView.cpp" line="8652"/>
         <source>GeoTIFF (*.tif)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="8712"/>
+        <location filename="pfmView.cpp" line="8711"/>
         <source>No part of this GeoTIFF file falls within the displayed area.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="8719"/>
+        <location filename="pfmView.cpp" line="8718"/>
         <source>This program only handles unprojected GeoTIFF files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="8726"/>
+        <location filename="pfmView.cpp" line="8725"/>
         <source>This program only handles geographic GeoTIFF files.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="8733"/>
+        <location filename="pfmView.cpp" line="8732"/>
         <source>This file has no datum/projection information.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="8740"/>
+        <location filename="pfmView.cpp" line="8739"/>
         <source>Unable to open file.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9141"/>
-        <location filename="pfmView.cpp" line="9146"/>
-        <location filename="pfmView.cpp" line="9151"/>
-        <location filename="pfmView.cpp" line="9156"/>
-        <location filename="pfmView.cpp" line="9161"/>
-        <location filename="pfmView.cpp" line="9166"/>
-        <location filename="pfmView.cpp" line="9171"/>
+        <location filename="pfmView.cpp" line="9140"/>
+        <location filename="pfmView.cpp" line="9145"/>
+        <location filename="pfmView.cpp" line="9150"/>
+        <location filename="pfmView.cpp" line="9155"/>
+        <location filename="pfmView.cpp" line="9160"/>
+        <location filename="pfmView.cpp" line="9165"/>
+        <location filename="pfmView.cpp" line="9170"/>
         <source>pfmView unload process</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9141"/>
+        <location filename="pfmView.cpp" line="9140"/>
         <source>Unable to start the unload process!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9146"/>
+        <location filename="pfmView.cpp" line="9145"/>
         <source>The unload process crashed!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9151"/>
+        <location filename="pfmView.cpp" line="9150"/>
         <source>The unload process timed out!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9156"/>
+        <location filename="pfmView.cpp" line="9155"/>
         <source>There was a write error to the unload process!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9161"/>
+        <location filename="pfmView.cpp" line="9160"/>
         <source>There was a read error from the unload process!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9166"/>
+        <location filename="pfmView.cpp" line="9165"/>
         <source>The unload process died with an unknown error!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9171"/>
+        <location filename="pfmView.cpp" line="9170"/>
         <source>An error occurred during unload, some or all of your edits were not saved!
 Please run pfm_unload separatedly to see what the error condition was.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9227"/>
+        <location filename="pfmView.cpp" line="9226"/>
         <source>pfmView Unload</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9227"/>
+        <location filename="pfmView.cpp" line="9226"/>
         <source>There are too many unload processes running at this time.
 Please close some of the unload dialogs and retry.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9237"/>
-        <location filename="pfmView.cpp" line="9248"/>
+        <location filename="pfmView.cpp" line="9236"/>
+        <location filename="pfmView.cpp" line="9247"/>
         <source>pfmView Unload data confirmation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9238"/>
+        <location filename="pfmView.cpp" line="9237"/>
         <source>Do you really want to unload all edits for the displayed area?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9249"/>
+        <location filename="pfmView.cpp" line="9248"/>
         <source>Do you really want to unload all edits for the entire PFM?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9312"/>
+        <location filename="pfmView.cpp" line="9311"/>
         <source> PFM CUBE processing (pass 1 of 2) </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9318"/>
+        <location filename="pfmView.cpp" line="9317"/>
         <source> Extracting best CUBE hypotheses (pass 2 of 2) </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9341"/>
-        <location filename="pfmView.cpp" line="9345"/>
-        <location filename="pfmView.cpp" line="9349"/>
-        <location filename="pfmView.cpp" line="9353"/>
-        <location filename="pfmView.cpp" line="9357"/>
-        <location filename="pfmView.cpp" line="9361"/>
-        <location filename="pfmView.cpp" line="9380"/>
+        <location filename="pfmView.cpp" line="9340"/>
+        <location filename="pfmView.cpp" line="9344"/>
+        <location filename="pfmView.cpp" line="9348"/>
+        <location filename="pfmView.cpp" line="9352"/>
+        <location filename="pfmView.cpp" line="9356"/>
+        <location filename="pfmView.cpp" line="9360"/>
+        <location filename="pfmView.cpp" line="9379"/>
         <source>pfmView CUBE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9341"/>
+        <location filename="pfmView.cpp" line="9340"/>
         <source>Unable to start the CUBE process!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9345"/>
+        <location filename="pfmView.cpp" line="9344"/>
         <source>The CUBE process crashed!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9349"/>
+        <location filename="pfmView.cpp" line="9348"/>
         <source>The CUBE process timed out!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9353"/>
+        <location filename="pfmView.cpp" line="9352"/>
         <source>There was a write error from the CUBE process!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9357"/>
+        <location filename="pfmView.cpp" line="9356"/>
         <source>There was a read error from the CUBE process!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9361"/>
+        <location filename="pfmView.cpp" line="9360"/>
         <source>The CUBE process died with an unknown error!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9380"/>
+        <location filename="pfmView.cpp" line="9379"/>
         <source>An error occurred during CUBE processing!
 Please run pfmCube separatedly to see what the error condition was.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9407"/>
+        <location filename="pfmView.cpp" line="9406"/>
         <source>pfmView CUBE data confirmation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9408"/>
+        <location filename="pfmView.cpp" line="9407"/>
         <source>Do you really want to CUBE process the displayed area?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9474"/>
+        <location filename="pfmView.cpp" line="9473"/>
         <source> CUBE processing </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9879"/>
-        <location filename="pfmView.cpp" line="12250"/>
+        <location filename="pfmView.cpp" line="9878"/>
+        <location filename="pfmView.cpp" line="12249"/>
         <source>Left click to define polygon vertices, double click to define last vertex, middle click to abort</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="9990"/>
+        <location filename="pfmView.cpp" line="9989"/>
         <source>Are you sure you want to verify all displayed features?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="10003"/>
+        <location filename="pfmView.cpp" line="10002"/>
         <source> Verifying features </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="10108"/>
+        <location filename="pfmView.cpp" line="10107"/>
         <source>You cannot unselect the attribute that is being used for the color scale.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="10136"/>
+        <location filename="pfmView.cpp" line="10135"/>
         <source>All attributes on the Status tab are already assigned.
 You must unselect one or more of the selected attributes.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="10153"/>
-        <location filename="pfmView.cpp" line="10155"/>
+        <location filename="pfmView.cpp" line="10152"/>
+        <location filename="pfmView.cpp" line="10154"/>
         <source> - To change, select attribute on Attributes tab.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="10156"/>
+        <location filename="pfmView.cpp" line="10155"/>
         <location filename="pfmView.cpp" line="13169"/>
         <source>This is the value of %1 at the cursor</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="10233"/>
-        <location filename="pfmView.cpp" line="12237"/>
+        <location filename="pfmView.cpp" line="10232"/>
+        <location filename="pfmView.cpp" line="12236"/>
         <source>Left click to start rectangle, middle click to abort, right click for menu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="10312"/>
+        <location filename="pfmView.cpp" line="10311"/>
         <source>The data entered in the Chart tool bar width/height field is invalid!
 Please read the help documentation for this field.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="10440"/>
+        <location filename="pfmView.cpp" line="10439"/>
         <source>The data entered in the Chart tool bar chart scale field is invalid!
 Please read the help documentation for this field.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="10502"/>
+        <location filename="pfmView.cpp" line="10501"/>
         <source>Displayed area filter not allowed when displaying more bins than pixels!
 Please reduce the size of the viewed area in order to filter it.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="10929"/>
-        <location filename="pfmView.cpp" line="10946"/>
+        <location filename="pfmView.cpp" line="10928"/>
+        <location filename="pfmView.cpp" line="10945"/>
         <source>pfmView User Guide</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="10930"/>
+        <location filename="pfmView.cpp" line="10929"/>
         <source>The PFM_ABE environment variable is not set.
 This must point to the folder that contains the doc folder containing the PFM_ABE documentation.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="10947"/>
+        <location filename="pfmView.cpp" line="10946"/>
         <source>Can&apos;t find the Area Based Editor documentation file: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="11059"/>
+        <location filename="pfmView.cpp" line="11058"/>
         <source>&lt;center&gt;&lt;br&gt;&lt;h3&gt;There is a new version of PFMABE available&lt;/h3&gt;&lt;br&gt;&lt;/center&gt;Your current version is %1&lt;br&gt;The new version is %2&lt;br&gt;&lt;br&gt;You may download updated files using the links below. If a file is not listed below it has not been modified since the last release and does not need to be updated.&lt;br&gt;&lt;br&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=%3&gt;List of Changes&lt;/a&gt;&lt;/li&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="11989"/>
+        <location filename="pfmView.cpp" line="11988"/>
         <source>pfmView Find Feature</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="11989"/>
-        <location filename="pfmView.cpp" line="12042"/>
-        <location filename="pfmView.cpp" line="12061"/>
+        <location filename="pfmView.cpp" line="11988"/>
+        <location filename="pfmView.cpp" line="12041"/>
+        <location filename="pfmView.cpp" line="12060"/>
         <source>No feature file available.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12042"/>
+        <location filename="pfmView.cpp" line="12041"/>
         <source>pfmView Define Feature Polygon</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12160"/>
+        <location filename="pfmView.cpp" line="12159"/>
         <source>Left click to define points, double click to define last point, middle click to abort</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12173"/>
-        <location filename="pfmView.cpp" line="12190"/>
+        <location filename="pfmView.cpp" line="12172"/>
+        <location filename="pfmView.cpp" line="12189"/>
         <source>AREA (*.ARE *.are *.afs *.shp)</source>
         <oldsource>AREA (*.ARE *.are *.afs)</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12179"/>
+        <location filename="pfmView.cpp" line="12178"/>
         <source>pfmView Zoom to area file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12271"/>
+        <location filename="pfmView.cpp" line="12270"/>
         <source> Rectangular edit mode </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12278"/>
+        <location filename="pfmView.cpp" line="12277"/>
         <source> Select high point mode </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12285"/>
+        <location filename="pfmView.cpp" line="12284"/>
         <source> Select low point mode </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12292"/>
+        <location filename="pfmView.cpp" line="12291"/>
         <source> Polygon edit mode </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12299"/>
+        <location filename="pfmView.cpp" line="12298"/>
         <source> Capture contour mode </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12306"/>
+        <location filename="pfmView.cpp" line="12305"/>
         <source> Rectangle filter mode </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12313"/>
+        <location filename="pfmView.cpp" line="12312"/>
         <source> Polygon filter mode </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12320"/>
+        <location filename="pfmView.cpp" line="12319"/>
         <source> Rectangle filter mask mode </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12327"/>
+        <location filename="pfmView.cpp" line="12326"/>
         <source> Polygon filter mask mode </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12334"/>
+        <location filename="pfmView.cpp" line="12333"/>
         <source> Zoom in rectangle mode </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12341"/>
+        <location filename="pfmView.cpp" line="12340"/>
         <source> Output data points mode </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12348"/>
+        <location filename="pfmView.cpp" line="12347"/>
         <source> Define rectangular area file mode </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12355"/>
+        <location filename="pfmView.cpp" line="12354"/>
         <source> Define polygonal area file mode </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12362"/>
+        <location filename="pfmView.cpp" line="12361"/>
         <source> Define polygonal feature area mode </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12369"/>
+        <location filename="pfmView.cpp" line="12368"/>
         <source> Delete feature mode </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12376"/>
+        <location filename="pfmView.cpp" line="12375"/>
         <source> Edit feature mode </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12383"/>
+        <location filename="pfmView.cpp" line="12382"/>
         <source> Add feature mode </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12398"/>
+        <location filename="pfmView.cpp" line="12397"/>
         <source> Rectangular regrid mode </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12405"/>
+        <location filename="pfmView.cpp" line="12404"/>
         <source> Draw contour for filter - %L1 </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12413"/>
+        <location filename="pfmView.cpp" line="12412"/>
         <source> Remisp filter mode </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12420"/>
+        <location filename="pfmView.cpp" line="12419"/>
         <source> Select Google Earth placemark mode </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12448"/>
-        <location filename="pfmView.cpp" line="12452"/>
-        <location filename="pfmView.cpp" line="12456"/>
-        <location filename="pfmView.cpp" line="12460"/>
-        <location filename="pfmView.cpp" line="12464"/>
-        <location filename="pfmView.cpp" line="12468"/>
+        <location filename="pfmView.cpp" line="12447"/>
+        <location filename="pfmView.cpp" line="12451"/>
+        <location filename="pfmView.cpp" line="12455"/>
+        <location filename="pfmView.cpp" line="12459"/>
+        <location filename="pfmView.cpp" line="12463"/>
+        <location filename="pfmView.cpp" line="12467"/>
         <source>pfmView import process</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12448"/>
+        <location filename="pfmView.cpp" line="12447"/>
         <source>Unable to start the import process!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12452"/>
+        <location filename="pfmView.cpp" line="12451"/>
         <source>The import process crashed!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12456"/>
+        <location filename="pfmView.cpp" line="12455"/>
         <source>The import process timed out!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12460"/>
+        <location filename="pfmView.cpp" line="12459"/>
         <source>There was a write error to the import process!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12464"/>
+        <location filename="pfmView.cpp" line="12463"/>
         <source>There was a read error from the import process!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12468"/>
+        <location filename="pfmView.cpp" line="12467"/>
         <source>The import process died with an unknown error!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12482"/>
+        <location filename="pfmView.cpp" line="12481"/>
         <source>pfmView Import</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12482"/>
+        <location filename="pfmView.cpp" line="12481"/>
         <source>An error occurred during import</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12531"/>
+        <location filename="pfmView.cpp" line="12530"/>
         <location filename="setHighLow.cpp" line="278"/>
         <source>Unable to open feature file
 Reason: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12556"/>
+        <location filename="pfmView.cpp" line="12555"/>
         <source>Unable to read feature polygon
 Reason: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12567"/>
+        <location filename="pfmView.cpp" line="12566"/>
         <source>Unable to write feature record
 Reason: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12601"/>
+        <location filename="pfmView.cpp" line="12600"/>
         <source>pfmView Import DNC data</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12658"/>
+        <location filename="pfmView.cpp" line="12657"/>
         <source>pfmView Change feature file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12668"/>
-        <location filename="pfmView.cpp" line="12673"/>
+        <location filename="pfmView.cpp" line="12667"/>
+        <location filename="pfmView.cpp" line="12672"/>
         <location filename="setHighLow.cpp" line="226"/>
         <source>Binary Feature Data file (*.bfd)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12669"/>
+        <location filename="pfmView.cpp" line="12668"/>
         <source>NAVO standard target file (*.xml)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12708"/>
+        <location filename="pfmView.cpp" line="12707"/>
         <source>pfmView Change mosaic file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12718"/>
-        <location filename="pfmView.cpp" line="12722"/>
+        <location filename="pfmView.cpp" line="12717"/>
+        <location filename="pfmView.cpp" line="12721"/>
         <source>GeoTIFF mosaic file (*.tif *.TIF)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12769"/>
-        <location filename="pfmView.cpp" line="12773"/>
-        <location filename="pfmView.cpp" line="12777"/>
-        <location filename="pfmView.cpp" line="12781"/>
-        <location filename="pfmView.cpp" line="12785"/>
-        <location filename="pfmView.cpp" line="12789"/>
+        <location filename="pfmView.cpp" line="12768"/>
+        <location filename="pfmView.cpp" line="12772"/>
+        <location filename="pfmView.cpp" line="12776"/>
+        <location filename="pfmView.cpp" line="12780"/>
+        <location filename="pfmView.cpp" line="12784"/>
+        <location filename="pfmView.cpp" line="12788"/>
         <source>pfmView mosaic viewer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12769"/>
+        <location filename="pfmView.cpp" line="12768"/>
         <source>Unable to start the mosaic viewer process!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12773"/>
+        <location filename="pfmView.cpp" line="12772"/>
         <source>The mosaic viewer process crashed!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12777"/>
+        <location filename="pfmView.cpp" line="12776"/>
         <source>The mosaic viewer process timed out!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12781"/>
+        <location filename="pfmView.cpp" line="12780"/>
         <source>There was a write error to the mosaic viewer process!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12785"/>
+        <location filename="pfmView.cpp" line="12784"/>
         <source>There was a read error from the mosaic viewer process!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12789"/>
+        <location filename="pfmView.cpp" line="12788"/>
         <source>The mosaic viewer process died with an unknown error!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12807"/>
+        <location filename="pfmView.cpp" line="12806"/>
         <source>pfmView Mosaic</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12807"/>
+        <location filename="pfmView.cpp" line="12806"/>
         <source>An error occurred while running the mosaic viewer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12889"/>
+        <location filename="pfmView.cpp" line="12888"/>
         <source>The program %1 has been started but may take some time to appear.
 Please be patient, it will appear eventually (or die trying ;-)
 
@@ -4945,87 +4945,88 @@ IMPORTANT NOTE: Due to processing overhead the system may freeze for a few momen
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12925"/>
-        <location filename="pfmView.cpp" line="12929"/>
-        <location filename="pfmView.cpp" line="12933"/>
-        <location filename="pfmView.cpp" line="12937"/>
-        <location filename="pfmView.cpp" line="12941"/>
-        <location filename="pfmView.cpp" line="12945"/>
+        <location filename="pfmView.cpp" line="12924"/>
+        <location filename="pfmView.cpp" line="12928"/>
+        <location filename="pfmView.cpp" line="12932"/>
+        <location filename="pfmView.cpp" line="12936"/>
+        <location filename="pfmView.cpp" line="12940"/>
+        <location filename="pfmView.cpp" line="12944"/>
         <source>pfmView 3D viewer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12925"/>
+        <location filename="pfmView.cpp" line="12924"/>
         <source>Unable to start the 3D viewer process!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12929"/>
+        <location filename="pfmView.cpp" line="12928"/>
         <source>The 3D viewer process crashed!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12933"/>
+        <location filename="pfmView.cpp" line="12932"/>
         <source>The 3D viewer process timed out!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12937"/>
+        <location filename="pfmView.cpp" line="12936"/>
         <source>There was a write error to the 3D viewer process!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12941"/>
+        <location filename="pfmView.cpp" line="12940"/>
         <source>There was a read error from the 3D viewer process!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12945"/>
+        <location filename="pfmView.cpp" line="12944"/>
         <source>The 3D viewer process died with an unknown error!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12963"/>
+        <location filename="pfmView.cpp" line="12962"/>
         <source>pfmView 3D Viewer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="12963"/>
+        <location filename="pfmView.cpp" line="12962"/>
         <source>An error occurred while running the 3D viewer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="pfmView.cpp" line="13040"/>
+        <source>%1x%2 (PFM resolution)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="pfmView.cpp" line="13041"/>
-        <source>%1x%2 PFM resolution</source>
+        <source>%1x%2 (Screen resolution)</source>
+        <oldsource>%1x%2 PFM resolution</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="13042"/>
-        <source>%1x%2 Screen resolution</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="pfmView.cpp" line="13044"/>
+        <location filename="pfmView.cpp" line="13043"/>
         <source>1280x1024</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="13044"/>
+        <location filename="pfmView.cpp" line="13043"/>
         <source>2560x2048</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="13044"/>
+        <location filename="pfmView.cpp" line="13043"/>
         <source>5120x4096</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="13044"/>
+        <location filename="pfmView.cpp" line="13043"/>
         <source>10240x8192</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="13047"/>
+        <location filename="pfmView.cpp" line="13046"/>
         <source>Image resolution</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5761,8 +5762,8 @@ Reason: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="pfmView.cpp" line="10108"/>
-        <location filename="pfmView.cpp" line="10136"/>
+        <location filename="pfmView.cpp" line="10107"/>
+        <location filename="pfmView.cpp" line="10135"/>
         <location filename="set_defaults.cpp" line="128"/>
         <source>pfmView</source>
         <translation type="unfinished"></translation>
