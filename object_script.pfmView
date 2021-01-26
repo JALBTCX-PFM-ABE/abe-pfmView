@@ -71,4 +71,5 @@ INPUT(
 ./build/Release/QT4.8.6_PFM-Windows/moc_remispFilter.o
 ./build/Release/QT4.8.6_PFM-Windows/moc_screenshot.o
 ./build/Release/QT4.8.6_PFM-Windows/moc_unloadDialog.o
+./build/Release/QT4.8.6_PFM-Windows/qrc_icons.o
 );
