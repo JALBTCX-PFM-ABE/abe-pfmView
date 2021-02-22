@@ -83,6 +83,9 @@ uint8_t envin (OPTIONS *options, MISC *misc, QMainWindow *mainWindow)
       options->recentFile[i] = settings.value (string, options->recentFile[i]).toString ();
     }
 
+  options->defaultFileOpen = settings.value(QString("defaultFileOpen"), options->defaultFileOpen).toString();
+  options->lastScannedDirectory = settings.value(QString("lastScannedDirectory"), options->lastScannedDirectory).toString();
+  options->lastFileFilter = settings.value(QString("lastFileFilter"), options->lastFileFilter).toString();
   options->overlay_dir = settings.value (QString ("overlay directory"), options->overlay_dir).toString ();
   options->output_area_name_filter = settings.value (QString ("output area name filter"), options->output_area_name_filter).toString ();
   options->output_area_dir = settings.value (QString ("output area directory"), options->output_area_dir).toString ();
@@ -687,6 +690,9 @@ void envout (OPTIONS *options, MISC *misc, QMainWindow *mainWindow)
       settings.setValue (string, options->recentFile[i]);
     }
 
+  settings.setValue (QString ("defaultFileOpen"),options->defaultFileOpen);
+  settings.setValue (QString ("lastScannedDirectory"),options->lastScannedDirectory);
+  settings.setValue (QString ("lastFileFilter"),options->lastFileFilter);
   settings.setValue (QString ("overlay directory"), options->overlay_dir);
   settings.setValue (QString ("output area name filter"), options->output_area_name_filter);
   settings.setValue (QString ("output area directory"), options->output_area_dir);

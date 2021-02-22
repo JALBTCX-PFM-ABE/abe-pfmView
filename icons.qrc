@@ -34,6 +34,7 @@
         <file>icons/editfeature.png</file>
         <file>icons/verify_features.png</file>
         <file>icons/fileopen.png</file>
+	<file>icons/fileopen-enhanced.png</file>
         <file>icons/filter_rect_cursor.png</file>
         <file>icons/filter_poly_cursor.png</file>
         <file>icons/filter_rect.png</file>

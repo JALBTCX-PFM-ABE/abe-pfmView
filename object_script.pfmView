@@ -51,6 +51,7 @@ INPUT(
 ./build/Release/QT4.8.6_PFM-Windows/set_defaults.o
 ./build/Release/QT4.8.6_PFM-Windows/unloadDialog.o
 ./build/Release/QT4.8.6_PFM-Windows/writeContour.o
+./build/Release/QT4.8.6_PFM-Windows/enhancedOpenDisplay.o
 ./build/Release/QT4.8.6_PFM-Windows/moc_changePath.o
 ./build/Release/QT4.8.6_PFM-Windows/moc_dataTypeButtonBox.o
 ./build/Release/QT4.8.6_PFM-Windows/moc_definePolygon.o
@@ -71,5 +72,6 @@ INPUT(
 ./build/Release/QT4.8.6_PFM-Windows/moc_remispFilter.o
 ./build/Release/QT4.8.6_PFM-Windows/moc_screenshot.o
 ./build/Release/QT4.8.6_PFM-Windows/moc_unloadDialog.o
+./build/Release/QT4.8.6_PFM-Windows/moc_enhancedOpenDisplay.o
 ./build/Release/QT4.8.6_PFM-Windows/qrc_icons.o
 );

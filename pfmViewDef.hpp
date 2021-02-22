@@ -389,6 +389,9 @@ typedef struct
   float       default_width;              //!<  Default displayed area chart width
   float       default_height;             //!<  Default displayed area chart height
   QString     ge_name;                    //!<  Name of the Google Earth executable or script
+  QString     defaultFileOpen;            //!<  The default file dialog used for opening PFM files (normal or enhanced)
+  QString     lastScannedDirectory;       //!<  Last Scanned Directory of the enhanced Open
+  QString     lastFileFilter;             //!<  Last Filter used in the Enhanced Open  
 
 
 

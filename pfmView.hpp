@@ -61,6 +61,7 @@
 #include "unloadDialog.hpp"
 #include "otfDialog.hpp"
 #include "dataTypeButtonBox.hpp"
+#include "enhancedOpenDisplay.hpp"
 
 
 void displayMinMax (nvMap *map, OPTIONS *options, MISC *misc);
@@ -297,7 +298,7 @@ protected:
 
   QToolBar        *toolBar[NUM_TOOLBARS];
 
-  QToolButton     *bOpen, *bZoomOut, *bZoomIn, *bPrefs, *bEditMode, *bFilterDisplay, *bFilterRect, *bFilterPoly,
+  QToolButton     *bOpen, *bOpenEnhanced, *bZoomOut, *bZoomIn, *bPrefs, *bEditMode, *bFilterDisplay, *bFilterRect, *bFilterPoly,
                   *bFilterRectMask, *bFilterPolyMask, *bClearMasks, *bOpenGeotiff, *bDisplayMinMax, *bSetChecked, *bUnload, *bRedraw,
                   *bAutoRedraw, *bRedrawCoverage, *bDisplaySuspect, *bDisplayFeature, *bDisplayChildren, *bDisplayFeatureInfo,
                   *bDisplayFeaturePoly, *bDisplaySelected, *bDisplayReference, *bRemisp, *bRemispFilter, *bDrawContour, *bGrabContour,
@@ -310,6 +311,8 @@ protected:
   unloadDialog    *unloadDlg[100];
 
   int32_t         unload_count[100];
+  
+  QStringList     inputFilesList;
 
 
   void killGoogleEarth ();
@@ -342,7 +345,10 @@ protected:
   void covRightMouse (int32_t mouse_x, int32_t mouse_y, double lon, double lat);
 
   void setStatusAttributes ();
-
+ 
+  void openFiles(QString openMode);
+  void openEnhanced();
+  void openRegular();
 protected slots:
 
   void slotCheckMenu (QAction *action);
@@ -383,8 +389,11 @@ protected slots:
 
   void slotQuit ();
   void slotPostRedraw (NVMAP_DEF mapdef);
+  
+  void slotRegularOpenClicked();
+  void slotEnhancedOpenClicked();
 
-  void slotOpen ();
+ 
   void slotOpenRecent (QAction *action);
   void slotClosePFM ();
   void slotDataTypeButtonsPressed (QMouseEvent *e);

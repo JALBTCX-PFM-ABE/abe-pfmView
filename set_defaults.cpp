@@ -186,7 +186,7 @@ void set_defaults (MISC *misc, OPTIONS *options, uint8_t restore)
       options->recent_file_count = 0;
     }
 
-
+  options->defaultFileOpen = "normal";
   options->coast = NVFalse;
   options->cov_coast = NVTrue;
 

@@ -287,15 +287,23 @@ pfmView::pfmView (int *argc, char **argv, QWidget *parent):
   bOpen->setIcon (QIcon (":/icons/fileopen.png"));
   bOpen->setToolTip (tr ("Open PFM file"));
   bOpen->setWhatsThis (openText);
-  connect (bOpen, SIGNAL (clicked ()), this, SLOT (slotOpen ()));
+  connect (bOpen, SIGNAL (clicked ()), this, SLOT (slotRegularOpenClicked ()));
   toolBar[0]->addWidget (bOpen);
+  
+  bOpenEnhanced = new QToolButton (this);
+  bOpenEnhanced->setIcon (QIcon (":/icons/fileopen-enhanced.png"));
+  bOpenEnhanced->setToolTip (tr ("Open PFM file"));
+  bOpenEnhanced->setWhatsThis (openText);
+  connect (bOpenEnhanced, SIGNAL (clicked ()), this, SLOT (slotEnhancedOpenClicked()));
+  toolBar[0]->addWidget (bOpenEnhanced);
 
+  
 
   //  Get the normal background color
 
   blankPalette.setColor (QPalette::Window, bOpen->palette ().color (QWidget::backgroundRole ()));
   blankPalette.setColor (QPalette::WindowText, bOpen->palette ().color (QWidget::backgroundRole ()));
-
+  
 
   toolBar[0]->addSeparator ();
   toolBar[0]->addSeparator ();
@@ -2035,13 +2043,18 @@ pfmView::pfmView (int *argc, char **argv, QWidget *parent):
 
 
   //  The following menus are in the menu bar.
-
+     
   //  Setup the file menu.
 
-  QAction *fileOpenAction = new QAction (tr ("Open"), this);
-  fileOpenAction->setStatusTip (tr ("Open PFM file"));
+  QAction *fileOpenAction = new QAction (tr ("Open PFM (Normal)"), this);
+  fileOpenAction->setStatusTip (tr ("Open PFM file (Normal)"));
   fileOpenAction->setWhatsThis (openText);
-  connect (fileOpenAction, SIGNAL (triggered ()), this, SLOT (slotOpen ()));
+  connect (fileOpenAction, SIGNAL (triggered ()), this, SLOT (slotRegularOpenClicked()));
+  
+  QAction *fileOpenEnhancedAction = new QAction (tr ("Open PFM (Enhanced)"), this);
+  fileOpenEnhancedAction->setStatusTip (tr ("Open PFM file (Enhanced)"));
+  fileOpenEnhancedAction->setWhatsThis (openText);
+  connect (fileOpenEnhancedAction, SIGNAL (triggered ()), this, SLOT (slotEnhancedOpenClicked ()));
 
 
   recentMenu = new QMenu (tr ("Open Recent..."));
@@ -2101,6 +2114,7 @@ pfmView::pfmView (int *argc, char **argv, QWidget *parent):
 
   QMenu *fileMenu = menuBar ()->addMenu (tr ("File"));
   fileMenu->addAction (fileOpenAction);
+  fileMenu->addAction (fileOpenEnhancedAction);
   fileMenu->addMenu (recentMenu);
   fileMenu->addAction (fileCloseAction);
   fileMenu->addSeparator ();
@@ -2483,7 +2497,7 @@ pfmView::~pfmView ()
 void 
 pfmView::commandLineFileCheck ()
 {
-  slotOpen ();
+  openFiles (options.defaultFileOpen);
 
 
   //  Check to see if we requested a specific area on the command line (--nsew or --area_file).
@@ -7910,44 +7924,30 @@ pfmView::slotPostRedraw (NVMAP_DEF mapdef)
 
 
 
-//!  Open PFM file.  Called when someone uses "open" in the menu or presses the "open" button.
+void pfmView::openEnhanced(){
 
-void 
-pfmView::slotOpen ()
-{
-  QStringList files, filters;
-  QString file, dir;
-  PFM_OPEN_ARGS open_args;
-  int32_t pfm_handle = -1;
+     QStringList files;
+     enhancedOpenDisplay *enhancedOpen = new enhancedOpenDisplay(&options,&misc);
+     
+   
+     if (enhancedOpen->showMe() == QDialog::Accepted) {
+	 this->inputFilesList =  enhancedOpen->selectedFiles ();
+     } else  {
+         this->inputFilesList.clear();  
+     }
+     
+     // set the default open mode
+     options.defaultFileOpen = enhancedOpen->defaultOpenMode();
+     options.lastScannedDirectory = enhancedOpen->getLastScannedDirectory();
+     options.lastFileFilter = enhancedOpen->getCurrentFilter();
+}
 
-
-  uint8_t check_recent (QWidget *, OPTIONS *options, MISC *misc, QString file, QActionGroup *recentGrp, QMenu *recentMenu, QAction **recentFileAction);
-  void setSidebarUrls (QFileDialog *fd, QString dir);
-
-
-  uint8_t accepted = NVFalse;
-
-  if (recent_file_flag)
-    {
-      files << options.recentFile[recent_file_flag - 1];
-      dir = QFileInfo (options.recentFile[recent_file_flag - 1]).dir ().absolutePath ();
-
-      recent_file_flag = 0;
-
-      accepted = NVTrue;
-    }
-  else if (command_file_flag)
-    {
-      files << commandFile;
-      dir = QFileInfo (commandFile).dir ().absolutePath ();
-
-      command_file_flag = NVFalse;
-
-      accepted = NVTrue;
-    }
-  else
-    {
-      if (!QDir (options.input_pfm_dir).exists ()) options.input_pfm_dir = ".";
+void pfmView::openRegular() {
+     uint8_t check_recent (QWidget *, OPTIONS *options, MISC *misc, QString file, QActionGroup *recentGrp, QMenu *recentMenu, QAction **recentFileAction);
+     void setSidebarUrls (QFileDialog *fd, QString dir);
+     QStringList files,filters;
+     
+    if (!QDir (options.input_pfm_dir).exists ()) options.input_pfm_dir = ".";
 
       QFileDialog *fd = new QFileDialog (this, tr ("pfmView Open PFM Structure"));
       fd->setViewMode (QFileDialog::List);
@@ -7961,33 +7961,149 @@ pfmView::slotOpen ()
 
 
       filters << tr ("PFM (*.pfm)");
-
+      
       fd->setNameFilters (filters);
       fd->setFileMode (QFileDialog::ExistingFiles);
       fd->selectNameFilter (tr ("PFM (*.pfm)"));
 
 
-      if (fd->exec () == QDialog::Accepted) accepted = NVTrue;
+      this->inputFilesList.clear();
+      QStringList alreadyOpened;
+      if (fd->exec () == QDialog::Accepted) {
+	// make sure none of these files are already open
+	  QStringList tmp = fd->selectedFiles();
+	  boolean found;
+	  for (int i = 0; i < tmp.count(); i++) {
+	      found = false;
+	      for (int j = 0; j < misc.abe_share->pfm_count;j++)
+	      {
+		  if (tmp.at(i) == QString(misc.abe_share->open_args[j].list_path)) {
+		      found = true;
+		      alreadyOpened << tmp.at(i);
+		  }
+	      }
+	      if (!found) this->inputFilesList << tmp.at(i);
+	  }
+	  
+	 if (alreadyOpened.size() > 0 ) { 
+	 QString msg = "These files were already opened : \n" + alreadyOpened.join(",\n");    
+	 QMessageBox::warning (this, tr ("pfmView Open PFM Structure"), 
+		 msg);
+	 }
 
-      files = fd->selectedFiles ();
-      dir = fd->directory ().absolutePath ();
+    //    this->inputFilesList =  fd->selectedFiles ();
+      }
+}
+
+
+void 
+pfmView::slotRegularOpenClicked() {
+    
+    openFiles("regular");
+   
+}
+
+void
+pfmView::slotEnhancedOpenClicked() {
+    openFiles("enhanced");
+}
+//!  Open PFM file.  Called when someone uses "open" in the menu or presses the "open" button.
+
+void 
+pfmView::openFiles(QString openMode)
+{
+  QStringList filters;
+  QString file, dir;
+  PFM_OPEN_ARGS open_args;
+  int32_t pfm_handle = -1;
+
+  uint8_t check_recent (QWidget *, OPTIONS *options, MISC *misc, QString file, QActionGroup *recentGrp, QMenu *recentMenu, QAction **recentFileAction);
+ // void setSidebarUrls (QFileDialog *fd, QString dir);
+
+
+  uint8_t accepted = NVFalse;
+
+  if (recent_file_flag)
+    {
+      this->inputFilesList << options.recentFile[recent_file_flag - 1];
+      dir = QFileInfo (options.recentFile[recent_file_flag - 1]).dir ().absolutePath ();
+
+      recent_file_flag = 0;
+
+      accepted = NVTrue;
+    }
+  else if (command_file_flag)
+    {
+      this->inputFilesList << commandFile;
+      dir = QFileInfo (commandFile).dir ().absolutePath ();
+
+      command_file_flag = NVFalse;
+
+      accepted = NVTrue;
+    }
+  else
+    {
+      if (openMode == "enhanced") {
+	  openEnhanced();
+       } else {
+	  openRegular();
+      }
+      
+ 
+      if (this->inputFilesList.size() > 0 ) accepted = NVTrue;
+
+      
+//      if (!QDir (options.input_pfm_dir).exists ()) options.input_pfm_dir = ".";
+//
+//      QFileDialog *fd = new QFileDialog (this, tr ("pfmView Open PFM Structure"));
+//      fd->setViewMode (QFileDialog::List);
+//      fd->setMinimumHeight (800);
+//
+//
+//      //  Always add the current working directory and the last used directory to the sidebar URLs in case we're running from the command line.
+//      //  This function is in the nvutility library.
+//
+//      setSidebarUrls (fd, options.input_pfm_dir);
+//
+//
+//      filters << tr ("PFM (*.pfm)");
+//      
+//      fd->setNameFilters (filters);
+//      fd->setFileMode (QFileDialog::ExistingFiles);
+//      fd->selectNameFilter (tr ("PFM (*.pfm)"));
+//
+//
+//      if (fd->exec () == QDialog::Accepted) accepted = NVTrue;
+//
+//      files = fd->selectedFiles ();
+//      dir = fd->directory ().absolutePath ();
+//      qDebug() << "dir = " << dir;
+//      
+//      for (int i = 0; i < files.size(); i++)
+//      {
+//	  qDebug() << files.at(i);
+//      }
     }
 
 
   if (accepted)
     {
-      if ((misc.abe_share->pfm_count + files.size ()) >= MAX_ABE_PFMS)
+      
+      if ((misc.abe_share->pfm_count + this->inputFilesList.size ()) >= MAX_ABE_PFMS)
         {
           QMessageBox::warning (this, tr ("pfmView Open PFM Structure"), tr ("Too many open PFM structures.\nPlease close some before trying to open new ones."));
           return;
         }
 
 
-      for (int32_t i = 0 ; i < files.size () ; i++)
+      for (int32_t i = 0 ; i < this->inputFilesList.size () ; i++)
         {
-          file = files.at (i);
-
-
+          file = this->inputFilesList.at (i);
+	  QFileInfo info(file);
+	  dir = QDir(info.absoluteDir()).absolutePath();
+           
+	 
+ 
           if (!file.isEmpty())
             {
               //  Open the file and make sure it is a valid PFM file.
@@ -8440,7 +8556,7 @@ pfmView::slotOpenRecent (QAction *action)
           break;
         }
     }
-  slotOpen ();
+ openFiles (options.defaultFileOpen);
 }
 
 

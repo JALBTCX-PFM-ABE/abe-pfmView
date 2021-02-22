@@ -42,7 +42,7 @@
 
 #ifndef VERSION
 
-#define     VERSION     "PFM Software - pfmView V10.04 - 11/27/19"
+#define     VERSION     "PFM Software - pfmView V10.05 - 02/12/21"
 
 #endif
 
@@ -2505,5 +2505,12 @@
     11/27/19
 
     - Fixed bug in image export.
+ 
+    Version 10.05
+    Russ Johnson (Optimal GEO)
+    2/10/21
+  
+    - Added the enhanced file option (SHOM #11)
+    - Fixed bug that allowed the same PFM to be open multiple times.   
 
 </pre>*/
